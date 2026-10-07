@@ -1,173 +1,59 @@
-# Banking-Data-Analytics
+# Banking Risk Analytics
 
-# 🏦 End-to-End Banking Data Analytics
-
-## 📌 Project Overview
-
-This project is an end-to-end data analytics project focused on analyzing banking data and generating meaningful business insights. The project demonstrates a complete data analytics workflow, starting from database management and data extraction to data cleaning, exploratory data analysis, visualization, and interactive dashboard development.
-
-The complete workflow was performed using **SQL, Python, and Power BI**.
-
-> **Note:** The dataset used in this project was sourced from external resources and is used solely for learning and portfolio purposes.
+End-to-end banking analytics project built using **SQL**, **Python**, and **Power BI** to analyze customer risk and support data-driven lending decisions.
 
 ---
 
-## 🔄 Project Workflow
+## 📌 Problem Statement
 
-The project follows an end-to-end data analytics workflow:
-
-**Dataset → SQL → Python → Power BI**
-
-### 1. SQL Database
-
-- Imported the dataset into a SQL database.
-- Managed and accessed the data using SQL.
-- Connected the SQL database with Python for further analysis.
-
-### 2. Data Cleaning & Analysis using Python
-
-- Connected Python with the SQL database.
-- Used Pandas for data cleaning and preprocessing.
-- Prepared the data for further analysis.
-- Performed exploratory data analysis to identify patterns and trends.
-
-### 3. Data Visualization
-
-Created visualizations using:
-
-- Matplotlib
-- Seaborn
-
-These visualizations helped explore relationships, distributions, and trends within the banking data.
-
-### 4. Interactive Dashboard using Power BI
-
-Developed an interactive Power BI dashboard to present key banking insights and enable users to explore the data dynamically.
+Develop a basic understanding of risk analytics in financial services and understand how data can be used to minimize the risk of losing money while lending to customers.
 
 ---
 
-## 📊 Dashboard Pages
+## 🛠️ Approach / Solution
 
-### 🏠 Home
+An end-to-end analytics workflow was built by importing banking data into SQL, connecting SQL with Python for cleaning and transformation, and visualizing the results in Power BI.
 
-The home page provides a high-level overview of key banking metrics, including:
+With the Power BI dashboard, the company can make lending decisions based on an applicant's profile — helping identify and minimize the risk of default before approving a loan.
 
-- Total Clients
-- Total Loan
-- Total Deposit
-- Checking Accounts
-- Savings Accounts
-- Business Lending
+### 1. SQL — Querying & Risk Analysis
+Solved analytical SQL queries including:
+- Identifying the year with the highest number of new customers joining the bank
+- Finding the top 10 customers by estimated income (Client ID, Name, Occupation, Estimated Income)
+- Identifying customers whose bank loan amount exceeds their estimated income
+- Finding customer pairs within the same loyalty classification with differing income levels
+- Classifying customers into **Low, Medium, and High Financial Risk** based on bank loans relative to estimated income
 
-### 💰 Loan Analysis
+### 2. Python — Data Cleaning & EDA
+- Cleaned and transformed the SQL-sourced data using Pandas
+- Performed exploratory data analysis using Matplotlib and Seaborn to understand risk patterns
 
-The Loan Analysis dashboard focuses on analyzing loan performance across different customer segments and categories.
-
-Key analysis includes:
-
-- Total Loan
-- Bank Loan
-- Business Lending
-- Credit Card Balance
-- Loan Analysis by Banking Relationship
-- Loan Analysis by Occupation
-- Loan Analysis by Nationality
-- Loan Analysis by Income Band
-
-### 🏦 Deposit Analysis
-
-The Deposit Analysis dashboard focuses on deposit performance and customer banking behavior.
-
-Key analysis includes:
-
-- Total Deposit
-- Bank Deposit
-- Savings Account Amount
-- Checking Account Amount
-- Deposit Analysis by Banking Relationship
-- Deposit Analysis by Occupation
-- Deposit Analysis by Nationality
-- Deposit Analysis by Income Band
+### 3. Power BI — Dashboard & Decision Support
+- Built an interactive dashboard covering loans, deposits, clients, income bands, occupations, nationality, and banking relationships
+- Designed to support loan approval decisions based on applicant risk profile
 
 ---
 
-## 🎯 Project Objectives
+## 🧰 Tech Stack / Key Skills
 
-The main objectives of this project are:
-
-- Perform end-to-end banking data analysis.
-- Extract and manage data using SQL.
-- Clean and preprocess data using Python and Pandas.
-- Perform exploratory data analysis using Python.
-- Create meaningful visualizations using Matplotlib and Seaborn.
-- Analyze customer banking behavior.
-- Analyze loan and deposit performance.
-- Identify patterns across different customer segments.
-- Build an interactive Power BI dashboard for business reporting.
+`MySQL` · `SQL-Python Integration` · `Pandas` · `Matplotlib` · `Seaborn` · `Power BI` · `DAX` · `Data Modeling` · `Risk Analytics`
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 📈 Outcome
 
-- **SQL** – Database management and data handling
-- **Python** – Data analysis and preprocessing
-- **Pandas** – Data cleaning and manipulation
-- **Matplotlib** – Data visualization
-- **Seaborn** – Exploratory data visualization
-- **Power BI** – Interactive dashboard and business intelligence reporting
+Delivered a risk-aware analytics workflow and dashboard that helps a bank evaluate applicant profiles and minimize lending risk, supporting more informed loan approval decisions.
 
 ---
 
-## 📈 Key Analysis Areas
+## 👤 Author
 
-The project analyzes banking data across multiple dimensions:
+**Aman Kumar**
+[GitHub](https://github.com/amansingh134) · [LinkedIn](https://linkedin.com/in/aman-kumar27)
 
-- Customer Analysis
-- Loan Performance
-- Deposit Performance
-- Banking Relationship Analysis
-- Income Band Analysis
-- Occupation Analysis
-- Nationality Analysis
-- Gender Analysis
-- Year-wise Analysis
 
----
 
-## ✨ Dashboard Features
 
-- Interactive navigation between dashboard pages
-- Year-based filtering
-- Gender-based filtering
-- Banking relationship filtering
-- Institution advisor filtering
-- Loan performance analysis
-- Deposit performance analysis
-- Customer segmentation analysis
-- Interactive KPI cards and visualizations
 
----
 
-## 📂 Project Structure
 
-```text
-End-to-End-Banking-Data-Analytics/
-│
-├── data/
-│   └── banking_data.csv
-│
-├── sql/
-│   └── banking_analysis.sql
-│
-├── python/
-│   └── banking_data_analysis.ipynb
-│
-├── powerbi/
-│   └── banking_dashboard.pbix
-│
-├── images/
-│   ├── home_dashboard.png
-│   ├── loan_analysis.png
-│   └── deposit_analysis.png
-│
-└── README.md
